@@ -79,7 +79,6 @@ console.log(ageJonas > ageSarah); // >, <, >=, <=
 console.log(ageSarah >= 19);
 
 const isFullAge = ageSarah >= 18;
-*/
 
 const now = 2037;
 const ageJonas = now - 1991;
@@ -93,3 +92,51 @@ console.log(x, y);
 
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
+
+const firstName = "Jonas";
+const job = "Teacher";
+const birthYear = 1991;
+const currentYear = 2037;
+const jonas =
+    "I'm " +
+    firstName +
+    ", a " +
+    (currentYear - birthYear) +
+    " year old " +
+    job;
+
+// Template Literals
+const jonasTemp = `I'm ${firstName}, a ${
+    currentYear - birthYear
+} year old ${job}`;
+
+console.log(jonas);
+console.log(jonasTemp);
+console.log(`Just a regular string`);
+
+console.log("string \nthis is second line"); // \n\
+console.log(`This is multiple line
+for template literal`);
+*/
+
+const age = 15;
+// const isOldEnough = age >= 18;
+
+if (age >= 18) {
+    // More common way of doing
+    console.log("Sarah can start driving license");
+} else {
+    // const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. Wait another ${18 - age} years`);
+}
+
+const birthYear = 2012;
+let century;
+
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+
+console.log(century);
