@@ -117,7 +117,6 @@ console.log(`Just a regular string`);
 console.log("string \nthis is second line"); // \n\
 console.log(`This is multiple line
 for template literal`);
-*/
 
 const age = 15;
 // const isOldEnough = age >= 18;
@@ -140,3 +139,24 @@ if (birthYear <= 2000) {
 }
 
 console.log(century);
+*/
+
+// Type Conversion
+const inputYear = "1991";
+console.log(Number(inputYear)); // Original value doesn't change
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Jonas"));
+console.log(typeof NaN);
+
+console.log(typeof String(23));
+
+// Type Coercion
+console.log("I'm " + 23 + " years old"); // number to string
+console.log("23" - "10" - 3); // string to number
+console.log("2" * 6); // string to number
+console.log(30 / "10"); // string to number
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
