@@ -139,7 +139,6 @@ if (birthYear <= 2000) {
 }
 
 console.log(century);
-*/
 
 // Type Conversion
 const inputYear = "1991";
@@ -160,3 +159,26 @@ console.log(30 / "10"); // string to number
 let n = "1" + 1;
 n = n - 1;
 console.log(n);
+*/
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean(""));
+console.log(Boolean({})); // Empty object is true
+
+const money = 1;
+
+if (money) {
+    console.log("you have money");
+} else {
+    console.log("you don't have money");
+}
+
+let height;
+
+if (height) {
+    console.log("Yay, height is declared and initialised");
+} else {
+    console.log("height must be undefined");
+}
