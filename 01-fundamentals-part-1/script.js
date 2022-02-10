@@ -159,7 +159,6 @@ console.log(30 / "10"); // string to number
 let n = "1" + 1;
 n = n - 1;
 console.log(n);
-*/
 
 console.log(Boolean(0));
 console.log(Boolean(undefined));
@@ -182,3 +181,23 @@ if (height) {
 } else {
     console.log("height must be undefined");
 }
+*/
+
+const age = 18;
+
+if (age === 18) console.log("You just became an adult"); // Strict
+if (age == 18) console.log("You just became an adult"); // Loose - Avoid using this
+
+let yourFavouritNum = Number(prompt("What's your favourite number?"));
+console.log(yourFavouritNum);
+console.log(typeof yourFavouritNum);
+
+if (yourFavouritNum === 23) {
+    console.log("Cool, 23 is an amazing number");
+} else if (yourFavouritNum === 7) {
+    console.log("7 is also a cool number");
+} else {
+    console.log("Number is not 7 or 23");
+}
+
+if (yourFavouritNum !== 23) console.log("Why not 23?");
