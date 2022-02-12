@@ -200,7 +200,6 @@ if (yourFavouritNum === 23) {
 }
 
 if (yourFavouritNum !== 23) console.log("Why not 23?");
-*/
 
 const hasDrivingLicense = true; // A
 const hasGoodVision = true; // B
@@ -220,3 +219,27 @@ if (hasDrivingLicense && hasGoodVision && !isTired) {
 
 console.log(hasDrivingLicense || hasGoodVision || isTired);
 console.log(hasDrivingLicense && hasGoodVision && !isTired);
+
+*/
+
+const day = "Sunda";
+
+switch (day) {
+    case "Monday":
+        console.log("Plan course structure");
+        break;
+    case "Tuesday":
+        console.log("Go to coding meetup");
+        break;
+    case "Wednesday":
+    case "Thursday":
+        console.log("Write examples");
+        break;
+    case "Saturday":
+    case "Sunday":
+        console.log("Enjoy your weekend");
+        break;
+
+    default:
+        console.log("Not a valid day");
+}
