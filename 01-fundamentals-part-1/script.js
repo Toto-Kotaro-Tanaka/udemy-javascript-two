@@ -241,7 +241,6 @@ switch (day) {
     default:
         console.log("Not a valid day");
 }
-*/
 
 3 + 4; // Expression = piece of code produces a value
 1991;
@@ -254,3 +253,23 @@ if (23 > 10) {
 
 // Important to know the difference between expressions and statements because JS expects these in different places. For example, you can only use expression in template literal.
 console.log(`I'm ${2022 - 1999} years old`);
+*/
+
+const age = 25;
+// Ternary operator
+age >= 23 ?
+    console.log("I'd like to drink wine") :
+    console.log("I'd like to drink water");
+
+const drink = age >= 23 ? "wine" : "water";
+console.log(`I'd like to drink ${drink}`);
+console.log(`I'd like to drink ${age >= 23 ? "beer" : "tea"}`); // Ternary operator in template literal because it is expression
+
+// Normal if else
+let drink2;
+
+if (age >= 23) {
+    drink2 = "wine";
+} else {
+    drink2 = "water";
+}
