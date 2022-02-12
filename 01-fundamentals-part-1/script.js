@@ -220,8 +220,6 @@ if (hasDrivingLicense && hasGoodVision && !isTired) {
 console.log(hasDrivingLicense || hasGoodVision || isTired);
 console.log(hasDrivingLicense && hasGoodVision && !isTired);
 
-*/
-
 const day = "Sunda";
 
 switch (day) {
@@ -243,3 +241,16 @@ switch (day) {
     default:
         console.log("Not a valid day");
 }
+*/
+
+3 + 4; // Expression = piece of code produces a value
+1991;
+true && false;
+
+if (23 > 10) {
+    // Statement = bigger code that doesn't produce a value
+    const str = "23 is bigger than 10";
+}
+
+// Important to know the difference between expressions and statements because JS expects these in different places. For example, you can only use expression in template literal.
+console.log(`I'm ${2022 - 1999} years old`);
