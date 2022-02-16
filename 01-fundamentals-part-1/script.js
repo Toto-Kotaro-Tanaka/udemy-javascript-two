@@ -253,7 +253,6 @@ if (23 > 10) {
 
 // Important to know the difference between expressions and statements because JS expects these in different places. For example, you can only use expression in template literal.
 console.log(`I'm ${2022 - 1999} years old`);
-*/
 
 const age = 25;
 // Ternary operator
@@ -273,3 +272,4 @@ if (age >= 23) {
 } else {
     drink2 = "water";
 }
+*/
