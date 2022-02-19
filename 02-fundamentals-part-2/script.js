@@ -77,7 +77,6 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
-*/
 
 const calcAge = (birthYear) => 2037 - birthYear;
 
@@ -95,3 +94,41 @@ const yearsRetirement = function(birthYear, firstName) {
 
 console.log(yearsRetirement(1991, "Jonas"));
 console.log(yearsRetirement(1970, "Mike"));
+*/
+
+const friends = ["Mike", "Bob", "Peter"];
+console.log(friends);
+console.log(friends[1]);
+console.log(friends.length); // Number of elements not zero based
+console.log(friends[friends.length - 1]); // To get the last element in array
+friends[2] = "Jay";
+// friends = ["Clare", "Ciara"] // This is NOT possible
+console.log(friends);
+
+const years = new Array(1991, 2002, 2034); // Array function using new key word
+console.log(years);
+console.log(years[2]);
+
+const firstName = "Jonas";
+const jonas = [firstName, "Schmidtmann", 2037 - 1991, "teacher", friends];
+console.log(jonas);
+console.log(jonas[3]);
+
+const calcAge = (birthYear) => 2037 - birthYear;
+const birthYears = [1991, 1967, 2002, 2010, 2018];
+
+console.log(calcAge(birthYears)); // NaN result because birthYears array is not a number
+
+console.log(calcAge(birthYears[0]));
+console.log(calcAge(birthYears[1]));
+console.log(calcAge(birthYears[2]));
+console.log(calcAge(birthYears[birthYears.length - 1]));
+
+const ages = [
+    calcAge(birthYears[0]),
+    calcAge(birthYears[1]),
+    calcAge(birthYears[2]),
+    calcAge(birthYears[years.length - 1]),
+];
+
+console.log(ages);
