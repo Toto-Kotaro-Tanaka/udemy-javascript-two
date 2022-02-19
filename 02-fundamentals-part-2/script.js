@@ -63,7 +63,7 @@ const yearsRetirement = (birthYear, firstName) => {
 
 console.log(yearsRetirement(1991, "Jonas"));
 console.log(yearsRetirement(1980, "Bob"));
-*/
+
 function cutFruit(fruit) {
     return fruit * 4;
 }
@@ -77,3 +77,21 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+*/
+
+const calcAge = (birthYear) => 2037 - birthYear;
+
+const yearsRetirement = function(birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        return retirement;
+    } else {
+        return -1; // Standard number in Programming that has no meaning
+    }
+    // return `${firstName} is retires in ${retirement} years time`;
+};
+
+console.log(yearsRetirement(1991, "Jonas"));
+console.log(yearsRetirement(1970, "Mike"));
