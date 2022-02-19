@@ -94,7 +94,6 @@ const yearsRetirement = function(birthYear, firstName) {
 
 console.log(yearsRetirement(1991, "Jonas"));
 console.log(yearsRetirement(1970, "Mike"));
-*/
 
 const friends = ["Mike", "Bob", "Peter"];
 console.log(friends);
@@ -132,3 +131,26 @@ const ages = [
 ];
 
 console.log(ages);
+*/
+
+const friends = ["Mike", "Bob", "Peter"];
+const newLength = friends.push("Johnny"); // Push is function returning a value, value = new length
+friends.unshift("Carlos");
+console.log(friends);
+console.log(newLength);
+
+friends.pop();
+friends.shift();
+
+console.log(friends);
+friends.push(23);
+console.log(friends.indexOf("Bob")); // If nothing matches, shows -1
+console.log(friends.includes("Bob")); // ES6
+console.log(friends.includes("23")); // false because includes is strict comparison
+console.log(friends.includes(23)); // true
+
+if (friends.includes("Peter")) {
+    console.log("You have a friend called Peter");
+} else {
+    console.log("You don't have a friend called Peter");
+}
