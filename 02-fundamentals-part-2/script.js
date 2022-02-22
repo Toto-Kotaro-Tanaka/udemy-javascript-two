@@ -131,7 +131,6 @@ const ages = [
 ];
 
 console.log(ages);
-*/
 
 const friends = ["Mike", "Bob", "Peter"];
 const newLength = friends.push("Johnny"); // Push is function returning a value, value = new length
@@ -154,3 +153,43 @@ if (friends.includes("Peter")) {
 } else {
     console.log("You don't have a friend called Peter");
 }
+*/
+
+// Objects Key Value Pairs
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Schmidtmann",
+    age: 2037 - 1991,
+    job: "Teacher",
+    friends: ["Michael", "Bob", "Joe"],
+};
+
+console.log(jonas);
+
+console.log(jonas.firstName); // Dot notation
+console.log(jonas["firstName"]); // Bracket Notation
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]); // In Bracket Notation, any expression can be inserted
+
+const choice = prompt(`Do you want to know;
+first name
+last name
+age
+friends?`);
+
+if (jonas[choice]) {
+    console.log(jonas[choice]);
+} else {
+    console.log("It's not valid input");
+}
+
+jonas.location = "Portgal";
+jonas["twitter"] = "@jonastiwitter";
+
+console.log(jonas);
+
+// Jonas has 3 friends and his best friend is called Michael
+console.log(
+    `${jonas.firstName} has ${jonas.friends.length} friends and his best friend is ${jonas.friends[0]} and second best friend is ${jonas["friends"][2]} `,
+);
