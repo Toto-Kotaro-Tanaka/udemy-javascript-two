@@ -153,7 +153,6 @@ if (friends.includes("Peter")) {
 } else {
     console.log("You don't have a friend called Peter");
 }
-*/
 
 // Objects Key Value Pairs
 const jonas = {
@@ -193,3 +192,71 @@ console.log(jonas);
 console.log(
     `${jonas.firstName} has ${jonas.friends.length} friends and his best friend is ${jonas.friends[0]} and second best friend is ${jonas["friends"][2]} `,
 );
+*/
+
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Schmidtmann",
+    age: 2037 - 1991,
+    birthYear: 1990,
+    job: "Teacher",
+    friends: ["Michael", "Bob", "Joe"],
+    hasDriversLicense: true,
+
+    calcAge: function(birthYear) {
+        // Property of jonas Object - expression
+        return 2037 - birthYear;
+    },
+};
+
+console.log(jonas.calcAge(2000));
+console.log(jonas["calcAge"](1990));
+
+const toto = {
+    firstName: "Toto",
+    lastName: "Tanaka",
+    age: 2037 - 1990,
+    birthYear: 1990,
+    job: "Office worker",
+    friends: ["Greg", "Tom", "Alan"],
+    hasDriversLicense: true,
+
+    calcAge: function() {
+        // Property of jonas Object - expression
+        console.log(this);
+        return 2037 - this.birthYear;
+    },
+};
+
+console.log(toto.calcAge());
+
+const riki = {
+    firstName: "Riki",
+    lastName: "Tanaka",
+    birthYear: 2025,
+    job: "student",
+    friends: ["Greg", "Tom", "Alan"],
+    hasDriversLicense: false,
+
+    calcAge: function() {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    challenge: function() {
+        this.firstName = this.firstName;
+        this.age = 2037 - this.birthYear;
+        this.hasDriversLicense = this.hasDriversLicense;
+        this.job = this.job;
+        return `${riki.firstName} is ${this.calcAge()} years old ${
+            riki.job
+        } and ${
+            riki.hasDriversLicense ? "he has" : "he doesn't"
+        } have D license`;
+    },
+};
+
+console.log(riki.age); // Not function
+
+// Riki is a xx years old student. And he doesn't have a driver's license.
+console.log(riki.challenge());
