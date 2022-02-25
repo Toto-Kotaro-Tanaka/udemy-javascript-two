@@ -192,7 +192,6 @@ console.log(jonas);
 console.log(
     `${jonas.firstName} has ${jonas.friends.length} friends and his best friend is ${jonas.friends[0]} and second best friend is ${jonas["friends"][2]} `,
 );
-*/
 
 const jonas = {
     firstName: "Jonas",
@@ -260,3 +259,18 @@ console.log(riki.age); // Not function
 
 // Riki is a xx years old student. And he doesn't have a driver's license.
 console.log(riki.challenge());
+*/
+
+const mark = {
+    firstName: "Mark",
+    surName: "Miller",
+    weight: 73,
+    height: 1.74,
+    BMI: function() {
+        this.bmi = (this.weight / this.height ** 2).toFixed(2);
+        return this.bmi;
+    },
+};
+
+mark.BMI();
+console.log(mark.bmi);
