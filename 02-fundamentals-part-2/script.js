@@ -277,7 +277,6 @@ console.log(mark.bmi);
 for (let i = 1; i <= 10; i++) {
     console.log(`Lifting weights repetition ${i}`);
 }
-*/
 
 const jonasArray = [
     "Jonas",
@@ -318,4 +317,24 @@ for (let i = 0; i < jonasArray.length; i++) {
 for (let i = 0; i < jonasArray.length; i++) {
     if (typeof jonasArray[i] === "number") break;
     console.log(jonasArray[i], typeof jonasArray[i]);
+}
+*/
+
+const jonasArray = [
+    "Jonas",
+    "Schmedmann",
+    2037 - 1991,
+    "teacher", ["Michael", "Peter", "Steven"],
+];
+
+for (let i = jonasArray.length - 1; i >= 0; i--) {
+    console.log(jonasArray[i]);
+}
+
+for (let ex = 1; ex < 11; ex++) {
+    console.log(`------ Starting exercise ${ex}`);
+
+    for (let rep = 1; rep < 5; rep++) {
+        console.log(`Repetition ${ex}-${rep}`);
+    }
 }
