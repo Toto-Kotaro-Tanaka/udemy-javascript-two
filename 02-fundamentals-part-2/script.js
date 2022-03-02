@@ -259,7 +259,6 @@ console.log(riki.age); // Not function
 
 // Riki is a xx years old student. And he doesn't have a driver's license.
 console.log(riki.challenge());
-*/
 
 const mark = {
     firstName: "Mark",
@@ -274,3 +273,49 @@ const mark = {
 
 mark.BMI();
 console.log(mark.bmi);
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`Lifting weights repetition ${i}`);
+}
+*/
+
+const jonasArray = [
+    "Jonas",
+    "Schmedmann",
+    2037 - 1991,
+    "teacher", ["Michael", "Peter", "Steven"],
+    true,
+];
+
+const types = [];
+
+for (let i = 0; i < jonasArray.length; i++) {
+    console.log(jonasArray[i], typeof jonasArray[i]);
+    // Filling types array
+    // types[i] = typeof jonasArray[i];
+
+    types.push(typeof jonasArray);
+}
+
+console.log(types);
+
+const years = [1999, 2010, 2003, 1989];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// Continue
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] !== "string") continue;
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
+// Break
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] === "number") break;
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
