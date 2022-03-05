@@ -318,7 +318,6 @@ for (let i = 0; i < jonasArray.length; i++) {
     if (typeof jonasArray[i] === "number") break;
     console.log(jonasArray[i], typeof jonasArray[i]);
 }
-*/
 
 const jonasArray = [
     "Jonas",
@@ -336,5 +335,31 @@ for (let ex = 1; ex < 11; ex++) {
 
     for (let rep = 1; rep < 5; rep++) {
         console.log(`Repetition ${ex}-${rep}`);
+    }
+}
+*/
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+}
+
+console.log("---------------------------------------------");
+
+let rep = 1;
+
+while (rep <= 10) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+    console.log(`I'm rolling a dice, ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+
+    if (dice === 6) {
+        console.log("Loop is about to finish");
     }
 }
